@@ -113,7 +113,6 @@ if menu == "Halaman Utama":
     3. Aman dan rahasia
     4. Mudah digunakan oleh seluruh siswa
     """)
-    st.info("Data disimpan lokal pada file data.json.")
 
 
 # ================================
@@ -381,4 +380,5 @@ elif menu == "Guru":
         if st.button("Logout"):
             st.session_state.logged_in = False
             st.session_state.guru_email = ""
+
             st.rerun()
